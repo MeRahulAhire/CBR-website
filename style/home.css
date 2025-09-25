@@ -1,0 +1,99 @@
+@font-face {
+  font-family: gilroy;
+  src: url("../assets/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: alan-sans;
+  src: url("../assets/fonts/AlanSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: righteous;
+  src: url("../assets//fonts/Righteous-Regular.ttf");
+}
+
+.lp-s1 {
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/images/landing-page-horizontal.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.s1-subsec-1 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.subsec-1-container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.subsec-1-head {
+  color: #f7f7f7;
+  font-family: gilroy;
+  font-size: 3rem;
+}
+.subsec-1-head2 {
+  color: #f7f7f7;
+  font-family: alan-sans;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+.subsec-1-p {
+  color: #f7f7f7;
+  font-family: alan-sans;
+  margin-top: 0.5rem;
+}
+.subsec-1-btn-deploy {
+  margin-top: 1rem;
+  background-color: #76ff03;
+  color: #212121;
+  height: 3rem;
+  width: 12rem;
+  display: grid;
+  place-items: center;
+  font-family: alan-sans;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.subsec-1-free-credit {
+  color: #f7f7f7;
+  margin-top: 1rem;
+  font-family: alan-sans;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.s1-subsec-2 {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 512px) {
+  .lp-s1 {
+    background: url("../assets/images/landing-page-vertical.webp");
+    background-position: center;
+    background-size: cover;
+    flex-direction: column-reverse;
+  }
+  .subsec-1-head {
+    font-size: 2.25rem;
+  }
+  .s1-subsec-1 {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
