@@ -1,5 +1,5 @@
 import "../../style/home.css"
-
+import cbr_video_demo from "../../assets/video/cbr-demo-video.webm"
 export default function home() {
   return <>
   
@@ -22,6 +22,21 @@ export default function home() {
     </div>
     <div className="s1-subsec-2"></div>
   </div>
+
+  <div className="lp-s2">
+    <div className="subsec-2-head">Here's how it works</div>
+    <div className="subsec-2-info">
+      <div className="subsec-2-info-label">4. Use our diagnostic dashboard to ensure you always get the best performance.</div>
+      <div className="subsec-2-info-video">
+        <p>4. Use our diagnostic dashboard to ensure you always get the best performance.</p>
+        <video src={cbr_video_demo}></video>
+      </div>
+    </div>
+  </div>
   
+  <div className="lp-s3">
+    <div className="subsec-3-head">Cloud Blender Render</div>
+
+  </div>
   </>;
 }
