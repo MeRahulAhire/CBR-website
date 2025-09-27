@@ -133,7 +133,72 @@
   background-color: #0f0f0f;
 
 }
+.subsec-3-head{
+  color: #f7f7f7;
+  font-size: 2rem;
+  font-family: righteous;
+  height: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  flex-direction: column;
+}
+.subsec-3-head div {
+  padding-top: 3rem;
+}
 
+.subsec-3-head p{
+  color: #f7f7f7;
+  font-size: 1.25rem;
+  font-family: alan-sans;
+
+}
+.subsec-3-info{
+  height: calc(100% - 8rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: grid;
+ align-items: center;
+}
+.subsec-3-info img {
+  width: calc(100% - 40vw);
+}
+
+.lp-s4{
+  height: 100vh;
+  min-height: 600px;
+  background-color: #0f0f0f;
+}
+.subsec-4-head{
+  font-size: 2rem;
+  color: #f7f7f7; 
+  height: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: righteous;
+  display: grid;
+  align-items: center;
+}
+.subsec-4-info{
+  width: calc(100% - 4rem);
+  margin-left: 2rem;
+  margin-right: 2rem; 
+  height: calc(100% - 8rem);
+  display: flex;
+  align-items: center;
+  
+}
+.subsec-4-info-label{
+  color: #f7f7f7;
+  font-family: alan-sans;
+  font-size: 1.5rem;
+  width: 40%;
+  margin-right: 2rem;
+
+}
+.subsec-4-info-chart{
+  width: 60%;
+  background-color: #76ff03;
+}
 
 @media screen and (max-width: 512px) {
   .lp-s1 {
@@ -182,10 +247,42 @@
     margin-right: 1rem;
   }
 
-  /* @media screen and (max-height: 500px) {
-    
-    .subsec-2-info{
-      height: calc(100% - 8rem);
-    }
-  } */
+  .subsec-3-head{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .subsec-3-head p {
+    font-size: 1.1rem;
+  }
+  .subsec-3-info {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  } 
+  .subsec-3-info img {
+    width: 100%;
+  } 
+  .subsec-4-head{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .subsec-4-info{
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: calc(100% - 10rem);
+  }
+  .subsec-4-info-label{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  .subsec-4-info-chart{
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
