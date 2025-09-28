@@ -126,14 +126,13 @@
   margin-right: 2rem;
 }
 
-.lp-s3{
+.lp-s3 {
   height: 100vh;
   min-height: 600px;
   width: 100%;
   background-color: #0f0f0f;
-
 }
-.subsec-3-head{
+.subsec-3-head {
   color: #f7f7f7;
   font-size: 2rem;
   font-family: righteous;
@@ -146,31 +145,38 @@
   padding-top: 3rem;
 }
 
-.subsec-3-head p{
+.subsec-3-head p {
   color: #f7f7f7;
   font-size: 1.25rem;
   font-family: alan-sans;
-
 }
-.subsec-3-info{
+.subsec-3-info {
   height: calc(100% - 8rem);
   margin-left: 2rem;
   margin-right: 2rem;
   display: grid;
- align-items: center;
+  align-items: center;
 }
 .subsec-3-info img {
   width: calc(100% - 40vw);
 }
 
-.lp-s4{
+.lp-s4 {
   height: 100vh;
   min-height: 600px;
-  background-color: #0f0f0f;
+  background: url("../assets/images/lynx-sofa-render-image.webp");
+  background-position: center;
+  background-size: cover;
 }
-.subsec-4-head{
+
+.s4-bg-opacity {
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.95);
+}
+.subsec-4-head {
   font-size: 2rem;
-  color: #f7f7f7; 
+  color: #f7f7f7;
   height: 8rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -178,26 +184,125 @@
   display: grid;
   align-items: center;
 }
-.subsec-4-info{
+.subsec-4-info {
   width: calc(100% - 4rem);
   margin-left: 2rem;
-  margin-right: 2rem; 
+  margin-right: 2rem;
   height: calc(100% - 8rem);
   display: flex;
   align-items: center;
-  
 }
-.subsec-4-info-label{
+.subsec-4-info-label {
   color: #f7f7f7;
   font-family: alan-sans;
   font-size: 1.5rem;
   width: 40%;
   margin-right: 2rem;
+}
+.subsec-4-info-chart {
+  width: 60%;
+  background-color: rgba(116, 255, 3, 0.396);
+}
+
+.lp-s5 {
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  background: url("../assets/images/barbershop-render-image.webp");
+  background-size: cover;
+  background-position: center;
+}
+.s5-bg-opacity{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.85);
+}
+.subsec-5-head{
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #f7f7f7;
+  font-size: 2rem;
+  font-family: righteous;
+}
+.subsec-5-head div {
+  display: flex;
 
 }
-.subsec-4-info-chart{
-  width: 60%;
-  background-color: #76ff03;
+.subsec-5-head img {
+  height: 2.5rem;
+  margin-left: 0.75rem;
+}
+.subsec-5-info{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #f7f7f7;
+  height: calc(100% - 8rem);
+  overflow-y: hidden;
+}
+.subsec-5-info-label-1{
+  font-family: alan-sans;
+  font-size: 1.5rem;
+  width: calc(100% - 40vw);
+  margin-bottom: 1rem;
+}
+.subsec-5-info-label-2{
+  font-family: alan-sans;
+  margin-top: 1rem;
+  font-weight: 200;
+  font-size: 1.25rem;
+ 
+}
+.subsec-5-info-label-2 ul {
+  max-height: 100%;
+}
+.subsec-5-info-label-2 li {
+  margin-top: 0.75rem;
+  margin-left: 2rem;
+}
+
+.lp-s6 {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background: url("../assets/images/cosmos-laundromat-render-Image.webp");
+  background-position: center;
+  background-size: cover;
+}
+.s6-bg-opacity{
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.85);
+}
+.subsec-6-head{
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #f7f7f7;
+  font-size: 2rem;
+  font-family: righteous;
+  
+}
+
+.subsec-6-info{
+  height: calc(100% - 8rem);
+  display: flex;
+  align-items: center;
+}
+.subsec-6-info-label{
+  color: #f7f7f7;
+  font-family: alan-sans;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+.subsec-6-info-chart img{
+  width: 50vw;
+  padding-right: 2rem;
 }
 
 @media screen and (max-width: 512px) {
@@ -247,7 +352,7 @@
     margin-right: 1rem;
   }
 
-  .subsec-3-head{
+  .subsec-3-head {
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -257,16 +362,16 @@
   .subsec-3-info {
     margin-left: 1rem;
     margin-right: 1rem;
-  } 
+  }
   .subsec-3-info img {
     width: 100%;
-  } 
-  .subsec-4-head{
+  }
+  .subsec-4-head {
     padding-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .subsec-4-info{
+  .subsec-4-info {
     flex-direction: column;
     justify-content: center;
     width: calc(100% - 2rem);
@@ -274,15 +379,53 @@
     margin-right: 1rem;
     height: calc(100% - 10rem);
   }
-  .subsec-4-info-label{
+  .subsec-4-info-label {
     margin-left: 1rem;
     margin-right: 1rem;
     width: 100%;
     margin-bottom: 1rem;
     font-size: 1.25rem;
   }
-  .subsec-4-info-chart{
+  .subsec-4-info-chart {
     width: 100%;
+    margin-top: 1rem;
+  }
+  .subsec-5-head{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* display: block; */
+  }
+  .subsec-5-head div{
+    display: block;
+  }
+  .subsec-5-head img{
+    margin-left: 0rem;
+  }
+  .subsec-5-info{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .subsec-5-info-label-1{
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .subsec-6-head{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .subsec-6-info{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subsec-6-info-label{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  .subsec-6-info-chart img {
+    width: calc(100% - 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 1rem;
   }
 }
