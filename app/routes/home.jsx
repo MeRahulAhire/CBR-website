@@ -2,8 +2,9 @@
 import "../../style/home.css";
 import cbr_video_demo from "../../assets/video/cbr-demo-video.webm";
 import cbr_runpod from "../../assets/images/cbr+runpod.svg";
-import padlock from "../../assets/images/padlock.svg"
-import cbr_vs_others from "../../assets/images/cbr-vs-other.png"
+import padlock from "../../assets/images/padlock.svg";
+import cbr_vs_others from "../../assets/images/cbr-vs-other.png";
+import price_chart from "../../assets/images/price-comparision.png"
 import { useEffect } from "react";
 export default function home() {
   useEffect(() => {
@@ -90,11 +91,17 @@ export default function home() {
 
       <div className="lp-s5">
         <div className="s5-bg-opacity">
-          <div className="subsec-5-head"> <div>Your data is always secure <img src={padlock} alt="" srcset="" /></div> </div>
+          <div className="subsec-5-head">
+            {" "}
+            <div>
+              Your data is always secure <img src={padlock} alt="" srcset="" />
+            </div>{" "}
+          </div>
           <div className="subsec-5-info">
             <div className="subsec-5-info-label-1">
               Runpod is fully security-compliant, with many enterprise customers
-              already running their workloads on the platform. You can even request the compliance report from Runpod support team.
+              already running their workloads on the platform. You can even
+              request the compliance report from Runpod support team.
             </div>
             <div className="subsec-5-info-label-2">
               <ul>
@@ -118,18 +125,37 @@ export default function home() {
 
       <div className="lp-s6">
         <div className="s6-bg-opacity">
-
-        <div className="subsec-6-head">
-          No oversharing
-        </div>
-        <div className="subsec-6-info">
-          <div className="subsec-6-info-label">
-            Most render farms, in pursuit of maximizing profits, overshare machines with rendering jobs from other users, leading to slower and unpredictable performance. Cloud Blender Render gives you full control over your machine. When you deploy an instance, no one else but you are in charge of it.
+          <div className="subsec-6-head">No oversharing</div>
+          <div className="subsec-6-info">
+            <div className="subsec-6-info-label">
+              Most render farms, in pursuit of maximizing profits, overshare
+              machines with rendering jobs from other users, leading to slower
+              and unpredictable performance. Cloud Blender Render gives you full
+              control over your machine. When you deploy an instance, no one
+              else but you are in charge of it.
+            </div>
+            <div className="subsec-6-info-chart">
+              <img src={cbr_vs_others} alt="" />
+            </div>
           </div>
-          <div className="subsec-6-info-chart">
-            <img src={cbr_vs_others} alt="" />
-          </div>
         </div>
+      </div>
+      <div className="lp-s7">
+        <div className="subsec-7-head">
+          Unbeatable prices anywhere online 🌐
+        </div>
+        <div className="subsec-7-info">
+          <div className="subsec-7-info-label">
+            <p>
+              No inflated pricing. No shady crypto payments. No complicated
+              pay-per-frame model. Just pay only for what you use. Nothing comes
+              close to the price and experience of Cloud Blender Render.
+            </p>
+            <p>Cloud Blender Render is one of the few online renderers that gives you access to the RTX 5090.</p>
+          </div>
+          <div className="subsec-7-info-chart">
+            <img src={price_chart} alt="" />
+          </div>
         </div>
       </div>
     </>
