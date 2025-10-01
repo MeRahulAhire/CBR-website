@@ -121,7 +121,7 @@
 }
 
 .subsec-2-info-video video {
-  width: calc(100% - 3rem);
+  width: calc(70vw - 150px);
   margin-left: 1rem;
   margin-right: 2rem;
 }
@@ -343,6 +343,80 @@
 .subsec-7-info-chart img {
   width: 60vw;
 }
+.lp-s8{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1b5ccc 0%, #2071fc 100%);
+  position: relative;
+}
+
+.subsec-8-head{
+  font-size: 1.5rem;
+  color: #f7f7f7;
+  font-family: righteous;
+}
+.subsec-8-deploy-btn{
+  margin-top: 0.75rem;
+  height: 40px;
+  width: 150px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: alan-sans;
+  color: #212121;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.subsec-8-email{
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  font-family: alan-sans;
+  color: #f7f7f7;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+.subsec-8-email a{
+  text-decoration:underline;
+  color: #f7f7f7;
+}
+.subsec-8-footer a {
+  text-decoration: none;
+}
+.subsec-8-footer{
+  width: 100%;
+  height: 100px;
+  margin-top: 3rem;
+  /* position: absolute; */
+  bottom: 0;
+}
+.footer-github{
+  height: 40px;
+  width: 175px;
+  color: #f7f7f7;
+  font-family: gilroy;
+  background: #212121;
+  display: grid;
+  place-items: center;
+  margin-left: 1rem;
+  border-radius: 5px;
+
+
+}
+.made-by{
+  font-family: alan-sans;
+  color: #f7f7f7;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  font-weight: 500;
+
+}
 @media screen and (max-width: 768px) {
   .subsec-7-head {
     padding-left: 1rem;
@@ -355,7 +429,7 @@
     padding-right: 1rem;
     
   }
-  .subsec-7-info-label{~
+  .subsec-7-info-label{
     font-size: 1.25rem;
   }
 

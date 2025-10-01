@@ -4,9 +4,14 @@ import cbr_video_demo from "../../assets/video/cbr-demo-video.webm";
 import cbr_runpod from "../../assets/images/cbr+runpod.svg";
 import padlock from "../../assets/images/padlock.svg";
 import cbr_vs_others from "../../assets/images/cbr-vs-other.png";
-import price_chart from "../../assets/images/price-comparision.png"
-import { useEffect } from "react";
+import price_chart from "../../assets/images/price-comparision.png";
+import { useEffect, useRef } from "react";
+import Lenis from "lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default function home() {
+  const lenisRef = useRef(null);
   useEffect(() => {
     const chart_box = document.getElementById("subsec-4-info-chart");
 
@@ -21,6 +26,34 @@ export default function home() {
 
     // Resize handler
     window.addEventListener("resize", resizePreviewBox);
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    lenisRef.current = lenis;
+
+    // Sync Lenis with GSAP ScrollTrigger
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
+    // Cleanup
+    return () => {
+      lenis.destroy();
+      gsap.ticker.remove(lenis.raf);
+    };
   }, []);
   return (
     <>
@@ -56,7 +89,7 @@ export default function home() {
               4. Use our diagnostic dashboard to ensure you always get the best
               performance.
             </p>
-            <video src={cbr_video_demo}></video>
+            <video src={cbr_video_demo} id="cbr_video_demo"></video>
           </div>
         </div>
       </div>
@@ -151,10 +184,34 @@ export default function home() {
               pay-per-frame model. Just pay only for what you use. Nothing comes
               close to the price and experience of Cloud Blender Render.
             </p>
-            <p>Cloud Blender Render is one of the few online renderers that gives you access to the RTX 5090.</p>
+            <p>
+              Cloud Blender Render is one of the few online renderers that gives
+              you access to the RTX 5090.
+            </p>
           </div>
           <div className="subsec-7-info-chart">
             <img src={price_chart} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="lp-s8">
+        <div className="subsec-8-head">So what are you waiting for?</div>
+        <div className="subsec-8-deploy-btn">Deploy Now</div>
+        <div className="subsec-8-email">
+          We’re also offering a free demo for you to try out. Just send us an
+          email at <a href="mailto:info@rahulahire.com">info@rahulahire.com</a>{" "}
+          and we’ll get back to you in 2 hours.
+        </div>
+        <div className="subsec-8-footer">
+          <a
+            href="http://github.com/merahulahire/cloud-blender-render"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="footer-github">⭐ Star us on GitHub</div>
+          </a>
+          <div className="made-by">
+            Project made by Rahul Ahire in Pune, India
           </div>
         </div>
       </div>
