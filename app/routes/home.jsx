@@ -1,6 +1,6 @@
 // @ts-nocheck
 import "../../style/home.css";
-import cbr_video_demo from "../../assets/video/cbr-demo-video.webm";
+import cbr_video_demo from "../../assets/video/cbr-demo-video.mp4";
 import cbr_runpod from "../../assets/images/cbr+runpod.svg";
 import padlock from "../../assets/images/padlock.svg";
 import cbr_vs_others from "../../assets/images/cbr-vs-other.png";
@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { section2 } from "../component/animation_logic";
 
 export default function home() {
   const lenisRef = useRef(null);
@@ -26,6 +27,7 @@ export default function home() {
 
     // Resize handler
     window.addEventListener("resize", resizePreviewBox);
+    section2();
 
     const lenis = new Lenis({
       duration: 1.2,
@@ -89,7 +91,13 @@ export default function home() {
               4. Use our diagnostic dashboard to ensure you always get the best
               performance.
             </p>
-            <video src={cbr_video_demo} id="cbr_video_demo"></video>
+            <video
+              src={cbr_video_demo}
+              id="cbr_video_demo"
+              muted
+              playsInline
+              preload="auto"
+            ></video>
           </div>
         </div>
       </div>
@@ -127,7 +135,7 @@ export default function home() {
           <div className="subsec-5-head">
             {" "}
             <div>
-              Your data is always secure <img src={padlock} alt="" srcset="" />
+              Your data is always secure <img src={padlock} alt="" />
             </div>{" "}
           </div>
           <div className="subsec-5-info">
