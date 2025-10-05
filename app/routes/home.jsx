@@ -9,25 +9,21 @@ import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { section2 } from "../component/animation_logic";
+import { section2, chart_section } from "../component/animation_logic";
+import store from "../component/store";
+import Single_gpu_benchmark from "../component/single_gpu_benchmark";
+import Multi_gpu_benchmark from "../component/multi_gpu_benchmark";
+import Chart_info from "../component/chart_info";
 
 export default function home() {
   const lenisRef = useRef(null);
+
+  const { cbr_video_info, single_gpu_benchmark } = store();
+  // const single_gpu_benchmark = store((state) => state.single_gpu_benchmark)
   useEffect(() => {
-    const chart_box = document.getElementById("subsec-4-info-chart");
-
-    function resizePreviewBox() {
-      const width = chart_box.offsetWidth;
-      const height = width * 0.65;
-      chart_box.style.height = `${height}px`;
-    }
-
-    // Initial sizing
-    resizePreviewBox();
-
-    // Resize handler
-    window.addEventListener("resize", resizePreviewBox);
+    
     section2();
+    chart_section();
 
     const lenis = new Lenis({
       duration: 1.2,
@@ -83,13 +79,11 @@ export default function home() {
         <div className="subsec-2-head">Here's how it works</div>
         <div className="subsec-2-info">
           <div className="subsec-2-info-label">
-            4. Use our diagnostic dashboard to ensure you always get the best
-            performance.
+            {cbr_video_info}
           </div>
           <div className="subsec-2-info-video">
             <p>
-              4. Use our diagnostic dashboard to ensure you always get the best
-              performance.
+              {cbr_video_info}
             </p>
             <video
               src={cbr_video_demo}
@@ -122,10 +116,12 @@ export default function home() {
           </div>
           <div className="subsec-4-info">
             <div className="subsec-4-info-label">
-              Whether you’re an indie artist or a professional studio, Cloud
-              Blender Render can handle anything you throw at it.
+              <Chart_info/>
             </div>
-            <div className="subsec-4-info-chart" id="subsec-4-info-chart"></div>
+            {/* <div className="subsec-4-info-chart" id="subsec-4-info-chart"></div> */}
+            {/* <Single_gpu_benchmark/> */}
+            
+            {!!single_gpu_benchmark ? <Single_gpu_benchmark/> : <Multi_gpu_benchmark/>}
           </div>
         </div>
       </div>

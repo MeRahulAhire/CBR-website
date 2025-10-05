@@ -79,7 +79,7 @@
   width: 100%;
 }
 
-.lp-s2 {
+.lp-s2  {
   height: 100vh;
   width: 100%;
   background-color: #0f210f;
@@ -199,11 +199,16 @@
   width: 40%;
   margin-right: 2rem;
 }
+.subsec-4-info-label p {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+}
 .subsec-4-info-chart {
   width: 60%;
-  background-color: rgba(116, 255, 3, 0.396);
 }
-
+.subsec-4-info-chart canvas{
+  border-radius: 1rem;
+}
 .lp-s5 {
   height: 100vh;
   min-height: 600px;
@@ -388,6 +393,7 @@
 }
 .subsec-8-footer a {
   text-decoration: none;
+  width: 100px;
 }
 .subsec-8-footer{
   width: 100%;
