@@ -1,7 +1,13 @@
-import React from 'react'
+import "../../style/deploy.css"
 
 export default function deploy() {
   return (
-    <div>deploy</div>
+    <>
+    <div className="deploy-container">
+      <div className="deploy-head">
+        How to depoly Cloud Blender Render
+      </div>
+    </div>
+    </>
   )
 }

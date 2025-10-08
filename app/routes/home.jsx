@@ -14,6 +14,7 @@ import store from "../component/store";
 import Single_gpu_benchmark from "../component/single_gpu_benchmark";
 import Multi_gpu_benchmark from "../component/multi_gpu_benchmark";
 import Chart_info from "../component/chart_info";
+import Home_seo from "../component/home_seo";
 
 export default function home() {
   const lenisRef = useRef(null);
@@ -55,6 +56,7 @@ export default function home() {
   }, []);
   return (
     <>
+    <Home_seo/>
       <div className="lp-s1">
         <div className="s1-subsec-1">
           <div className="subsec-1-container">
@@ -105,7 +107,7 @@ export default function home() {
           </p>
         </div>
         <div className="subsec-3-info">
-          <img src={cbr_runpod} alt="Runpod Cloud Blender illustration" />
+          <img src={cbr_runpod} alt="Runpod and Cloud Blender Render Partnership" />
         </div>
       </div>
 
@@ -118,9 +120,6 @@ export default function home() {
             <div className="subsec-4-info-label">
               <Chart_info/>
             </div>
-            {/* <div className="subsec-4-info-chart" id="subsec-4-info-chart"></div> */}
-            {/* <Single_gpu_benchmark/> */}
-            
             {!!single_gpu_benchmark ? <Single_gpu_benchmark/> : <Multi_gpu_benchmark/>}
           </div>
         </div>
@@ -131,7 +130,7 @@ export default function home() {
           <div className="subsec-5-head">
             {" "}
             <div>
-              Your data is always secure <img src={padlock} alt="" />
+              Your data is always secure <img src={padlock} alt="padlock depicting security" />
             </div>{" "}
           </div>
           <div className="subsec-5-info">
@@ -172,7 +171,7 @@ export default function home() {
               else but you are in charge of it.
             </div>
             <div className="subsec-6-info-chart">
-              <img src={cbr_vs_others} alt="" />
+              <img src={cbr_vs_others} alt="Cloud Blender Render vs other render farms" />
             </div>
           </div>
         </div>
@@ -194,7 +193,7 @@ export default function home() {
             </p>
           </div>
           <div className="subsec-7-info-chart">
-            <img src={price_chart} alt="" />
+            <img src={price_chart} alt="Prices of Cloud Blender Render compared to other render farms" />
           </div>
         </div>
       </div>
