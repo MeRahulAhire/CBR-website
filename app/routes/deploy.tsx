@@ -39,7 +39,7 @@ export default function deploy() {
   return (
     <>
       <div className="deploy-container">
-        <div className="deploy-head">How to depoly Cloud Blender Render</div>
+        <div className="deploy-head">How to Deploy Cloud Blender Render</div>
       </div>
       <div className="deploy-instruct-container">
         <div className="instruct-box">
@@ -101,30 +101,30 @@ export default function deploy() {
               page. Click Sign up & Claim reward, and proceed to sign up using
               your Google ID.
             </div>
-            <img src={one} alt="" className="deploy-img" />
+            <img src={one} alt="Signup on Runpod" className="deploy-img" />
             <div className="deploy-info">
               After signing up, you’ll see your dashboard with your balance
               displayed at the top-left corner. For a new account, this will
               initially be zero.
             </div>
-            <img src={two} alt="" className="deploy-img" />
+            <img src={two} alt="Balance info" className="deploy-img" />
             <div className="deploy-info">
               Click on the <span className="bold">Billing</span> section and
               choose your desired amount, starting from $10. You can pay using
               either a credit card or a crypto wallet.
             </div>
-            <img src={three} alt="" className="deploy-img" />
+            <img src={three} alt="Load balance" className="deploy-img" />
             <div className="deploy-info">
               Once your payment is complete, your balance will update along with
               the extra free credits.
             </div>
-            <img src={four} alt="" className="deploy-img" />
+            <img src={four} alt="Updated balance" className="deploy-img" />
             <div className="deploy-info">
               Next, click on <span className="bold">Pods</span>, and you’ll see
               two options: <span className="bold">Secure Cloud</span> and{" "}
               <span className="bold">Community Cloud</span>.
             </div>
-            <img src={five} alt="" className="deploy-img" />
+            <img src={five} alt="Selecting pods in Secure Cloud and Community Cloud" className="deploy-img" />
             <div className="deploy-info">
               The differences between them are as follows:
             </div>
@@ -151,6 +151,25 @@ export default function deploy() {
             <div className="deploy-subsection-head">
             Deploying the Instance
           </div>
+          <div className="deploy-info">Let’s say we select <span className="bold">RTX 5090</span> in the <span className="bold">Community Cloud</span>.</div>
+          <img src={six} alt="Choosing RTX 5090" className="deploy-img" />
+          <div className="deploy-info">Click on <span className="bold">Change the Template</span>, as highlighted below.</div>
+          <img src={seven} alt="Changing Template" className="deploy-img" />
+          <div className="deploy-info">A dialog box will appear. Type <span className="italic">"blender"</span> and select the <span className="bold">Cloud Blender Render</span> template.</div>
+          <img src={eight} alt="Selecting Cloud Blender Render as Template" className="deploy-img" />
+          <div className="deploy-info">If you need more storage, click on <span className="bold">Edit</span>.</div>
+          <img src={nine} alt="Editing storage" className="deploy-img" />
+          <div className="deploy-info">The default storage is <span className="bold">50 GB</span>, but you can adjust it as needed and then click <span className="bold">Set Overrides</span>.</div>
+          <img src={ten} alt="Changing option for storage size" className="deploy-img" />
+          <div className="deploy-info">If you’re satisfied with the default settings, always choose <span className="bold">On-Demand</span>, which is selected by default.
+Avoid <span className="bold">Spot Instances</span>, as they are interruptible. Then click <span className="bold">Deploy On-Demand</span>.</div>
+          <img src={eleven} alt="Deployment settings" className="deploy-img" />
+          <div className="deploy-info"> Wait for 1–2 minutes, and you should be good to go. Click <span className="bold">Connect to Cloud Blender Render</span>. If the instance takes too long to start, stop and terminate it, then create a new one.</div>
+          <img src={twelve} alt="Spinning up instance" className="deploy-img" />
+          <div className="deploy-info">Now you’re all set! Upload your <span className="bold">.blend</span> file, choose your settings, and hit <span className="bold">Render</span>.
+For more details, please refer to the video above.</div>
+          <img src={thirteen} alt="View of the Cloud Blender Render instance" className="deploy-img" />
+          
 
         </div>
       </div>

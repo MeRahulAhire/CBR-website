@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -15,7 +14,19 @@ const comparisonData = [
   },
   {
     category: 'Security',
-    secureCloud: 'Security is ensured through various enterprise-grade compliance standards. Learn more about it here.',
+    secureCloud: (
+      <>
+        Security is ensured through various enterprise-grade compliance standards. Learn more about it{' '}
+        <a 
+          href="https://www.runpod.io/legal/compliance" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="link-info"
+        >
+          here
+        </a>.
+      </>
+    ),
     communityCloud: 'Security is offered on a best-effort basis and is not guaranteed like Secure Cloud due to its distributed nature.',
   },
   {
@@ -42,9 +53,9 @@ export default function ComparisonTable() {
       <Table sx={{ width: '100%' }} aria-label="comparison table">
         <TableHead>
           <TableRow>
-            <TableCell sx={{ fontWeight: 'bold', width: '20%', color: '#f7f7f7', borderBottom: '1px solid #1e3a5f' }}></TableCell>
-            <TableCell sx={{ fontWeight: 'bold', width: '40%', color: '#f7f7f7', borderBottom: '1px solid #1e3a5f' }}>Secure Cloud</TableCell>
-            <TableCell sx={{ fontWeight: 'bold', width: '40%', color: '#f7f7f7', borderBottom: '1px solid #1e3a5f' }}>Community Cloud</TableCell>
+            <TableCell sx={{ fontWeight: 'bold', width: '20%', color: '#fff', borderBottom: '1px solid #1e3a5f' }}></TableCell>
+            <TableCell sx={{ fontWeight: 'bold', width: '40%', color: '#fff', borderBottom: '1px solid #1e3a5f' }}>Secure Cloud</TableCell>
+            <TableCell sx={{ fontWeight: 'bold', width: '40%', color: '#fff', borderBottom: '1px solid #1e3a5f' }}>Community Cloud</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

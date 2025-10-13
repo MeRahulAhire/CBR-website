@@ -26,7 +26,8 @@
     width: 100%;
     background: rgba(15, 15, 15, 0.75);
     font-family: gilroy;
-    font-size: 2rem;
+    font-size: 2.25rem;
+     text-align: center;
 }
 .deploy-instruct-container{
     width: 100%;
@@ -127,4 +128,19 @@
 }
 .link-info{
      color:  #FF5F1F;
+}
+.italic{
+    font-style: italic;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .instruct-box{
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .deploy-head{
+       
+    }
 }
