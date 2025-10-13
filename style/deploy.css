@@ -1,7 +1,130 @@
+@font-face {
+  font-family: gilroy;
+  src: url("../assets/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: alan-sans;
+  src: url("../assets/fonts/AlanSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: righteous;
+  src: url("../assets//fonts/Righteous-Regular.ttf");
+}
+
+
 .deploy-container{
-    background-color: #0f0f0f;
+    background: url("../assets/images/deploy/junkshop.webp");
+    background-position: center;
+    background-size: cover;
 }
 .deploy-head{
     height: 400px;
+    color: #f7f7f7;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background: rgba(15, 15, 15, 0.75);
+    font-family: gilroy;
+    font-size: 2rem;
+}
+.deploy-instruct-container{
+    width: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.instruct-box{
+    width: calc(100% - 400px);
     
+}
+.deploy-button-box{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+.deploy-button-box a{
+    text-decoration: none;
+}
+
+.deploy-button{
+    background-color: #76ff03;
+  color: #212121;
+  height: 3rem;
+  width: max-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;  
+  font-family: alan-sans;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.deploy-button img{
+    height: 2rem;
+    margin-left: 0.25rem;
+}
+.referral-details{
+    margin-top: 2rem;
+    color: #f7f7f7;
+    font-family: alan-sans;
+}
+.referral-details li {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.deploy-subsection-head{
+    font-family: gilroy;
+    color: #f7f7f7;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+}
+
+.deploy-info{
+    margin-top: 1.75rem;
+    font-size: 1.1rem;
+    font-family: alan-sans;
+    color: #f7f7f7;
+}
+.yt-embed{
+    margin-top: 0.75rem;
+}
+.yt-embed iframe {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.deploy-img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 0.75rem;
+}
+.bold{
+    font-weight: bold;
+}
+.diff-table{
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+.gpu-option{
+    margin-top: 0.75rem;
+    color: #f7f7f7;
+    font-family: alan-sans;
+}
+.gpu-option li {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+.link-info{
+     color:  #FF5F1F;
 }

@@ -12,6 +12,9 @@
     "typecheck": "npm run cf-typegen && react-router typegen && tsc -b"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.4",
     "echarts": "^6.0.0",
     "gsap": "^3.13.0",
     "immer": "^10.1.3",
