@@ -6,6 +6,7 @@ export default function Deploy_seo() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="color-scheme" content="dark" />
+        <meta name="msvalidate.01" content="B3F027879B51700D869EAA9A569D8CDB" />
 
         <title>How to Deploy Cloud Blender Render — Step-by-Step Guide with Free RunPod Credits</title>
         <meta

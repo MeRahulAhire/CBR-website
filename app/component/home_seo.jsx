@@ -9,6 +9,7 @@ export default function Home_seo() {
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <meta name="color-scheme" content="dark" />
+     <meta name="msvalidate.01" content="B3F027879B51700D869EAA9A569D8CDB" />
 
     <title>Cloud Blender Render — Open-Source Cloud GPU Rendering for Blender</title>
     <meta name="title" content="Cloud Blender Render - Open-Source Cloud GPU Rendering for Blender" />

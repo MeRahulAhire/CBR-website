@@ -1,6 +1,6 @@
 // @ts-nocheck
 import "../../style/home.css";
-import cbr_video_demo from "../../assets/video/cbr-demo-video.mp4";
+// import cbr_video_demo from "../../assets/video/cbr-demo-video.mp4";
 import cbr_runpod from "../../assets/images/cbr+runpod.svg";
 import padlock from "../../assets/images/padlock.svg";
 import cbr_vs_others from "../../assets/images/cbr-vs-other.png";
@@ -91,7 +91,7 @@ export default function home() {
               {cbr_video_info}
             </p>
             <video
-              src={cbr_video_demo}
+              src="https://cbr.rahulahire.com/cbr-demo-video.mp4"
               id="cbr_video_demo"
               muted
               playsInline
