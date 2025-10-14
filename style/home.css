@@ -51,6 +51,9 @@
   font-family: alan-sans;
   margin-top: 0.5rem;
 }
+.deploy-page-button{
+  text-decoration: none;
+}
 .subsec-1-btn-deploy {
   margin-top: 1rem;
   background-color: #76ff03;

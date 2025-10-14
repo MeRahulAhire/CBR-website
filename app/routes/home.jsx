@@ -15,6 +15,7 @@ import Single_gpu_benchmark from "../component/single_gpu_benchmark";
 import Multi_gpu_benchmark from "../component/multi_gpu_benchmark";
 import Chart_info from "../component/chart_info";
 import Home_seo from "../component/home_seo";
+import Home_ld from "../component/home_ld";
 
 export default function home() {
   const lenisRef = useRef(null);
@@ -57,6 +58,7 @@ export default function home() {
   return (
     <>
     <Home_seo/>
+    <Home_ld/>
       <div className="lp-s1">
         <div className="s1-subsec-1">
           <div className="subsec-1-container">
@@ -68,7 +70,8 @@ export default function home() {
               <p>RTX 5090 from $0.69/hour</p>
               <p>RTX 4090 from $0.34/hour</p>
             </div>
-            <div className="subsec-1-btn-deploy">Deploy Now</div>
+            <a href="/deploy" className="deploy-page-button"><div className="subsec-1-btn-deploy">Deploy Now</div></a>
+            
             <div className="subsec-1-free-credit">
               Signup with our link and get additional $5-500 credits for free
             </div>
@@ -217,6 +220,7 @@ export default function home() {
             Project made by Rahul Ahire in Pune, India
           </div>
         </div>
+        
       </div>
     </>
   );

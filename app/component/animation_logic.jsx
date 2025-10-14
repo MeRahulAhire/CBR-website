@@ -69,7 +69,6 @@ export const chart_section = () => {
     scrub: 1, // Small smoothing value
     onUpdate: (self) => {
     const scroll_percent = self.progress * 100;
-    console.log(single_gpu_benchmark)
 
     if (scroll_percent >= 0 && scroll_percent < 50) {
       set_single_gpu_benchmark(true)

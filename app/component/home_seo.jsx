@@ -1,5 +1,5 @@
 // @ts-nocheck
-
+import { Scripts } from "react-router";
 
 export default function Home_seo() {
   return (
@@ -42,6 +42,8 @@ export default function Home_seo() {
     {/* <!-- Theme color (for browsers / mobile) --> */}
     <meta name="theme-color" content="#0b0b0b" />
 
+     {/* <!-- JSON-LD Structured Data --> */}
+        
   
     </head>
 
