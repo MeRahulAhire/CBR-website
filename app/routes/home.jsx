@@ -202,7 +202,8 @@ export default function home() {
       </div>
       <div className="lp-s8">
         <div className="subsec-8-head">So what are you waiting for?</div>
-        <div className="subsec-8-deploy-btn">Deploy Now</div>
+        <a href="/deploy" className="deploy-page-button"><div className="subsec-8-deploy-btn">Deploy Now</div></a>
+        
         <div className="subsec-8-email">
           We’re also offering a free demo for you to try out. Just send us an
           email at <a href="mailto:info@rahulahire.com">info@rahulahire.com</a>{" "}
