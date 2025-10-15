@@ -83,6 +83,9 @@ export default function deploy() {
                 If you’re already a RunPod user and want to avail this offer,
                 try signing up with another Gmail ID.
               </li>
+              <li>
+                This software only runs on Chrome or Chromium based browsers. For Safari and Firefox users, please use Chromium based browsers for the best experience.
+              </li>
             </ul>
           </div>
           <div className="deploy-subsection-head">Deployment Instructions</div>
