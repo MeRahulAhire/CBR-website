@@ -11,7 +11,7 @@ export default function Home_ld() {
               "name": "Cloud Blender Render",
               "operatingSystem": "Web",
               "applicationCategory": "GraphicsApplication",
-              "description": "Cloud Blender Render — open-source, GPU-accelerated rendering platform for Blender using RunPod infrastructure.",
+              "description": "Cloud Blender Render - smarter, affordable, open source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet.",
               "image": "https://cloud-blender-render.rahulahire.com/og-tag-image.webp",
               "url": "https://cloud-blender-render.rahulahire.com/",
               "publisher": {

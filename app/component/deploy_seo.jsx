@@ -8,10 +8,10 @@ export default function Deploy_seo() {
         <meta name="color-scheme" content="dark" />
         <meta name="msvalidate.01" content="B3F027879B51700D869EAA9A569D8CDB" />
 
-        <title>How to Deploy Cloud Blender Render — Step-by-Step Guide with Free RunPod Credits</title>
+        <title>How to Deploy Cloud Blender Render - Step-by-Step Guide with Free RunPod Credits</title>
         <meta
           name="title"
-          content="How to Deploy Cloud Blender Render — Step-by-Step Guide with Free Credits"
+          content="How to Deploy Cloud Blender Render - Step-by-Step Guide with Free Credits"
         />
         <meta
           name="description"
@@ -56,7 +56,7 @@ export default function Deploy_seo() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="How to Deploy Cloud Blender Render — Step-by-Step Guide with Free Credits"
+          content="How to Deploy Cloud Blender Render - Step-by-Step Guide with Free Credits"
         />
         <meta
           name="twitter:description"

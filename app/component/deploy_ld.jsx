@@ -8,8 +8,8 @@ export default function Deploy_ld() {
             {
               "@context": "https://schema.org",
               "@type": "TechArticle",
-              "headline": "How to Deploy Cloud Blender Render — Step-by-Step Guide with Free RunPod Credits",
-              "description": "Learn how to deploy Cloud Blender Render on RunPod with our step-by-step guide. Get up to $500 in free credits, choose RTX GPUs, and start rendering fast.",
+              "headline": "How to Deploy Cloud Blender Render - Step-by-Step Guide with Free Credits",
+              "description": "Learn how to deploy Cloud Blender Render with our step-by-step guide. Get up to $500 in free credits.",
               "image": "https://cloud-blender-render-rahulahire.com/og-tag-image.webp",
               "author": {
                 "@type": "Organization",

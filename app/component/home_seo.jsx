@@ -11,9 +11,9 @@ export default function Home_seo() {
      <meta name="color-scheme" content="dark" />
      <meta name="msvalidate.01" content="B3F027879B51700D869EAA9A569D8CDB" />
 
-    <title>Cloud Blender Render — Open-Source Cloud GPU Rendering for Blender</title>
-    <meta name="title" content="Cloud Blender Render - Open-Source Cloud GPU Rendering for Blender" />
-    <meta name="description" content="Cloud Blender Render — smarter, affordable, open-source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
+    <title>Cloud Blender Render - Open-Source Cloud GPU Rendering for Blender</title>
+    <meta name="title" content="Cloud Blender Render - Open Source Cloud GPU Rendering for Blender" />
+    <meta name="description" content="Cloud Blender Render - smarter, affordable, open source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
     <meta name="keywords" content="Blender render farm, cloud rendering, GPU rendering, RTX 5090, RTX 4090, affordable render farm, open source renderer, Runpod, Blender cloud render, render farm for Blender" />
 
     {/* <!-- Favicon / icons --> */}
@@ -28,8 +28,8 @@ export default function Home_seo() {
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Cloud Blender Render" />
     <meta property="og:url" content="https://cloud-blender-render.rahulahire.com/" />
-    <meta property="og:title" content="Cloud Blender Render — Open-Source Cloud GPU Rendering for Blender" />
-    <meta property="og:description" content="Cloud Blender Render — smarter, affordable, open-source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
+    <meta property="og:title" content="Cloud Blender Render - Open Source Cloud GPU Rendering for Blender" />
+    <meta property="og:description" content="Cloud Blender Render - smarter, affordable, open source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
     <meta property="og:image" content="/og-tag-image.webp" />
     {/* <!-- optional dimension hints --> */}
     <meta property="og:image:width" content="1920" />
@@ -37,8 +37,8 @@ export default function Home_seo() {
 
     {/* <!-- Twitter Card --> */}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Cloud Blender Render — Open-Source Cloud GPU Rendering for Blender" />
-    <meta name="twitter:description" content="Cloud Blender Render — smarter, affordable, open-source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
+    <meta name="twitter:title" content="Cloud Blender Render - Open Source Cloud GPU Rendering for Blender" />
+    <meta name="twitter:description" content="Cloud Blender Render - smarter, affordable, open source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
     <meta name="twitter:image" content="/og-tag-image.webp" />
 
     {/* <!-- Theme color (for browsers / mobile) --> */}
