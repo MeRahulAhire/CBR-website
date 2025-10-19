@@ -42,8 +42,8 @@ export default function deploy() {
   }, []);
   return (
     <>
-    <Deploy_seo/>
-    <Deploy_ld/>
+      <Deploy_seo />
+      <Deploy_ld />
       <div className="deploy-container">
         <div className="deploy-head">How to Deploy Cloud Blender Render</div>
       </div>
@@ -84,7 +84,9 @@ export default function deploy() {
                 try signing up with another Gmail ID.
               </li>
               <li>
-                This software only runs on Chrome or Chromium based browsers. For Safari and Firefox users, please use Chromium based browsers for the best experience.
+                This software only runs on Chrome or Chromium based browsers.
+                For Safari and Firefox users, please use Chromium based browsers
+                for the best experience.
               </li>
             </ul>
           </div>
@@ -94,13 +96,13 @@ export default function deploy() {
           </div>
           <div className="yt-embed">
             <iframe
-              id="yt-embed"
-              src="https://www.youtube.com/embed/feiuoMz57Ho?si=MCmpFq7L7JqPmvd6"
+            id="yt-embed"
+              src="https://www.youtube.com/embed/vdXJj6T99MA?si=9uDKDQab25OFDN9g"
               title="YouTube video player"
-              frameBorder="0"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
           </div>
           <div className="deploy-info">
@@ -244,66 +246,99 @@ export default function deploy() {
             simulation caches, etc., go to your{" "}
             <span className="bold">RunPod dashboard</span> where your{" "}
             <span className="bold">Cloud Blender Render</span> instance is
-            running. Click on <span className="bold"> Direct Folder Access</span>.
-            </div>
-            <img
-              src={fourteen}
-              alt="Accessing Direct Folder Access"
-              className="deploy-img"
-            />
-            <div className="deploy-info">
-              This will open a JupyterLab window, giving you direct access to
-              the folders. Do not delete any of these files or folders, as they
-              are necessary for running the Cloud Blender Render app. Click on
-              the <span className="bold">blend-folder</span>.
-            </div>
-            <img
-              src={fifteen}
-              alt="folder structure of JupyterLab"
-              className="deploy-img"
-            />
-            <div className="deploy-info">
-              This is where the app uploads your{" "}
-              <span className="bold">.blend</span> file. Drag and drop all your
-              relative files here.
-            </div>
-            <img
-              src={sixteen}
-              alt="Inside of blend-folder"
-              className="deploy-img"
-            />
-            <div className="deploy-info gilroy">
-              If your project relies on relative files or folders, please follow
-              the guidelines below (and the video above):
-            </div>
-            <div className="gpu-option">
+            running. Click on{" "}
+            <span className="bold"> Direct Folder Access</span>.
+          </div>
+          <img
+            src={fourteen}
+            alt="Accessing Direct Folder Access"
+            className="deploy-img"
+          />
+          <div className="deploy-info">
+            This will open a JupyterLab window, giving you direct access to the
+            folders. Do not delete any of these files or folders, as they are
+            necessary for running the Cloud Blender Render app. Click on the{" "}
+            <span className="bold">blend-folder</span>.
+          </div>
+          <img
+            src={fifteen}
+            alt="folder structure of JupyterLab"
+            className="deploy-img"
+          />
+          <div className="deploy-info">
+            This is where the app uploads your{" "}
+            <span className="bold">.blend</span> file. Drag and drop all your
+            relative files here.
+          </div>
+          <img
+            src={sixteen}
+            alt="Inside of blend-folder"
+            className="deploy-img"
+          />
+          <div className="deploy-info gilroy">
+            If your project relies on relative files or folders, please follow
+            the guidelines below (and the video above):
+          </div>
+          <div className="gpu-option">
             <ul>
               <li>
-                If you’re using multiple <span className="bold">.blend</span> files linked to your main
-                project file, store them in subfolders as shown in the
-                illustration below.
+                If you’re using multiple <span className="bold">.blend</span>{" "}
+                files linked to your main project file, store them in subfolders
+                as shown in the illustration below.
               </li>
               <li>
-                Don’t place multiple <span className="bold">.blend</span> files in the same path under <span className="bold">blend-folder</span> via Direct Folder Access, as the app may fail to
-                register them properly and cause conflicts.
+                Don’t place multiple <span className="bold">.blend</span> files
+                in the same path under{" "}
+                <span className="bold">blend-folder</span> via Direct Folder
+                Access, as the app may fail to register them properly and cause
+                conflicts.
               </li>
               <li>
                 Save the project locally following this structure. Zip all the
-                files, upload the archive to <span className="bold">blend-folder</span>, and then extract it with right click.
+                files, upload the archive to{" "}
+                <span className="bold">blend-folder</span>, and then extract it
+                with right click.
               </li>
             </ul>
-            </div>
-            <img src={seventeen} alt="correct way to add relative files to " className="deploy-img" />
-            <div className="deploy-info">
-              If you typically export <span className="bold">render passes</span> for VFX in Nuke or other compositing software, set the output location to <span className="italic">/workspace/output</span> or <span className="italic">/workspace/your-folder-name</span> so that it works correctly on Cloud Blender Render. Again, refer to the video for more details.
-            </div>
-            <img src={eighteen} alt="proper output path for render passes on Cloud Blender Render" className="deploy-img" />
-            <div className="deploy-info">Once you’ve finished rendering or compositing, right-click and select <span className="bold">Download as Archive</span>.</div>
-            <img src={nineteen} alt="downloading all the rendered frames" className="deploy-img" />
-            <div className="deploy-info">
-              Finally, once your work is done, stop and terminate the instance. If you wish to pause work and save files for later access, stop the instance but do not terminate it. This way, you’ll only be charged for storage, not for GPU usage.
-            </div>
-            <img src={twenty} alt="How to stop the Cloud Blender Render Instance" className="deploy-img bottom" />
+          </div>
+          <img
+            src={seventeen}
+            alt="correct way to add relative files to "
+            className="deploy-img"
+          />
+          <div className="deploy-info">
+            If you typically export <span className="bold">render passes</span>{" "}
+            for VFX in Nuke or other compositing software, set the output
+            location to <span className="italic">/workspace/output</span> or{" "}
+            <span className="italic">/workspace/your-folder-name</span> so that
+            it works correctly on Cloud Blender Render. Again, refer to the
+            video for more details.
+          </div>
+          <img
+            src={eighteen}
+            alt="proper output path for render passes on Cloud Blender Render"
+            className="deploy-img"
+          />
+          <div className="deploy-info">
+            Once you’ve finished rendering or compositing, right-click and
+            select <span className="bold">Download as Archive</span>.
+          </div>
+          <img
+            src={nineteen}
+            alt="downloading all the rendered frames"
+            className="deploy-img"
+          />
+          <div className="deploy-info">
+            Finally, once your work is done, stop and terminate the instance. If
+            you wish to pause work and save files for later access, stop the
+            instance but do not terminate it. This way, you’ll only be charged
+            for storage, not for GPU usage.
+          </div>
+          <img
+            src={twenty}
+            alt="How to stop the Cloud Blender Render Instance"
+            className="deploy-img bottom"
+          />
         </div>
       </div>
     </>

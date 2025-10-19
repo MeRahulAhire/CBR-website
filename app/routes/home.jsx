@@ -73,7 +73,10 @@ export default function home() {
             <a href="/deploy" className="deploy-page-button"><div className="subsec-1-btn-deploy">Deploy Now</div></a>
             
             <div className="subsec-1-free-credit">
-              Signup with our link and get additional $5-500 credits for free
+              Signup with our link and get additional $5-500 credits for free.
+            </div>
+            <div className="subsec-1-free-credit free-demo">
+              For free demo with RTX 5090, email us at info@rahulahire.com.
             </div>
           </div>
         </div>

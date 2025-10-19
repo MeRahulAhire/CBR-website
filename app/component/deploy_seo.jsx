@@ -42,7 +42,7 @@ export default function Deploy_seo() {
         />
         <meta
           property="og:title"
-          content="How to Deploy Cloud Blender Render — Step-by-Step Guide with Free Credits"
+          content="How to Deploy Cloud Blender Render - Step-by-Step Guide with Free Credits"
         />
         <meta
           property="og:description"
