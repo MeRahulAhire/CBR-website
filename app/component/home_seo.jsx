@@ -30,7 +30,7 @@ export default function Home_seo() {
     <meta property="og:url" content="https://cloud-blender-render.rahulahire.com/" />
     <meta property="og:title" content="Cloud Blender Render - Open Source Cloud GPU Rendering for Blender" />
     <meta property="og:description" content="Cloud Blender Render - smarter, affordable, open source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
-    <meta property="og:image" content="/og-tag-image.webp" />
+    <meta property="og:image" content="https://cloud-blender-render.rahulahire.com/og-tag-image.webp" />
     {/* <!-- optional dimension hints --> */}
     <meta property="og:image:width" content="1920" />
     <meta property="og:image:height" content="1080" />
@@ -39,7 +39,7 @@ export default function Home_seo() {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Cloud Blender Render - Open Source Cloud GPU Rendering for Blender" />
     <meta name="twitter:description" content="Cloud Blender Render - smarter, affordable, open source GPU rendering. Get RTX 5090 for just $0.69/hour for your rendering. Lowest price on internet" />
-    <meta name="twitter:image" content="/og-tag-image.webp" />
+    <meta name="twitter:image" content="https://cloud-blender-render.rahulahire.com/og-tag-image.webp" />
 
     {/* <!-- Theme color (for browsers / mobile) --> */}
     <meta name="theme-color" content="#0b0b0b" />

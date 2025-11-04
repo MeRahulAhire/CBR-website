@@ -48,7 +48,7 @@ export default function Deploy_seo() {
           property="og:description"
           content="Learn how to deploy Cloud Blender Render with our step-by-step guide. Get up to $500 in free credits."
         />
-        <meta property="og:image" content="/og-tag-image.webp" />
+        <meta property="og:image" content="https://cloud-blender-render.rahulahire.com/og-tag-image.webp" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
 
@@ -62,7 +62,7 @@ export default function Deploy_seo() {
           name="twitter:description"
           content="Learn how to deploy Cloud Blender Render with our step-by-step guide. Get up to $500 in free credits."
         />
-        <meta name="twitter:image" content="/og-tag-image.webp" />
+        <meta name="twitter:image" content="https://cloud-blender-render.rahulahire.com/og-tag-image.webp" />
 
         {/* <!-- Theme color (for browsers / mobile) --> */}
         <meta name="theme-color" content="#0b0b0b" />
