@@ -16,6 +16,7 @@ import Multi_gpu_benchmark from "../component/multi_gpu_benchmark";
 import Chart_info from "../component/chart_info";
 import Home_seo from "../component/home_seo";
 import Home_ld from "../component/home_ld";
+import  Navbar from "../component/navbar"
 
 export default function home() {
   const lenisRef = useRef(null);
@@ -57,6 +58,7 @@ export default function home() {
   }, []);
   return (
     <>
+    {/* <Navbar/> */}
     <Home_seo/>
     <Home_ld/>
       <div className="lp-s1">

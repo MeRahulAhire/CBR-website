@@ -26,6 +26,7 @@ import { useEffect } from "react";
 import ComparisonTable from "../component/table";
 import Deploy_seo from "../component/deploy_seo";
 import Deploy_ld from "../component/deploy_ld";
+import Navbar from "../component/navbar";
 
 export default function deploy() {
   useEffect(() => {
@@ -42,6 +43,7 @@ export default function deploy() {
   }, []);
   return (
     <>
+    <Navbar/>
       <Deploy_seo />
       <Deploy_ld />
       <div className="deploy-container">

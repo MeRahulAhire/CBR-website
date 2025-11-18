@@ -1,0 +1,73 @@
+@font-face {
+    font-family: pacifico;
+    src: url("../assets/fonts/Pacifico-Regular.ttf");
+}
+@font-face {
+    font-family: alan-sans;
+    src: url("../assets/fonts/AlanSans-VariableFont_wght.ttf");
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    z-index: 10;
+    display: grid;
+    place-items: center;
+}
+
+.nav-box{
+    width: 70%;
+    height: 48px;
+    margin-top: 1.25rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(247, 247, 247, 0.157);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: grid;
+    place-items: center; 
+    font-family: pacifico;
+    font-size: 1.25rem;
+    position: relative;
+}
+.nav-box a:nth-child(1){
+    
+    text-decoration: none;
+    color: #f7f7f7;
+    
+}
+
+.nav-box a:nth-child(2){
+    position: absolute;
+    right: 50px;
+    text-decoration: none;
+    
+}
+
+.support-logo{
+    height: 38px;
+    width: 100px;
+    background-color: #76ff03;
+    color: #212121;
+    font-family: alan-sans;
+    font-weight: 700;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 540px) {
+
+    .nav-box {
+        width: 90%;
+    }
+
+    .support-logo{
+        display: none;
+    }
+    
+}
