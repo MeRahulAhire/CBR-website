@@ -140,6 +140,23 @@
 .bottom{
     margin-bottom: 100px;
 }
+
+.blendpack-btn{
+    height: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    font-family: alan-sans;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: #212121;
+    background: #76ff03;
+    cursor: pointer;
+
+}
 @media screen and (max-width: 768px) {
     .instruct-box{
         width: calc(100% - 2rem);

@@ -27,6 +27,7 @@ import ComparisonTable from "../component/table";
 import Deploy_seo from "../component/deploy_seo";
 import Deploy_ld from "../component/deploy_ld";
 import Navbar from "../component/navbar";
+import BlendPack from "../../assets/images/deploy/BlendPack.webp"
 
 export default function deploy() {
   useEffect(() => {
@@ -99,7 +100,7 @@ export default function deploy() {
           <div className="yt-embed">
             <iframe
             id="yt-embed"
-              src="https://www.youtube.com/embed/vdXJj6T99MA?si=9uDKDQab25OFDN9g"
+              src="https://www.youtube.com/embed/c65bq3qT2eA?si=liPBK6w5TSfH7oF3"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -242,6 +243,23 @@ export default function deploy() {
 
           <div className="deploy-subsection-head">Additional Configuration</div>
           <div className="deploy-info">
+            If you work with linked/external assets that can't be packed within the blend file like <span className="bold">Video textures, VDB sequences, HDRI, IES, etc.</span> then I've specially made this addon <span className="bold">BlendPack</span> for you. Please refer the above video for more information.
+          </div>
+          <img
+            src={BlendPack}
+            alt="View of the BlendPack Addon"
+            className="deploy-img"
+          />
+          <div className="deploy-info">
+            Click on this button to download blendpack. You can also view BlendPack on <a href="https://github.com/MeRahulAhire/BlendPack" target="_blank" rel="noopener noreferrer" className="link-info">GitHub</a>.
+            <br /><a href="https://github.com/MeRahulAhire/BlendPack/raw/refs/heads/master/BlendPack.zip" target="_blank" rel="noopener noreferrer">
+            <button className="blendpack-btn">
+              Download BlendPack
+            </button>
+            </a>
+          </div>
+
+          {/* <div className="deploy-info">-----------------------------------------------------------------
             If the default Blender settings like{" "}
             <span className="bold">Pack External Data</span> aren’t sufficient
             and you need support for relative paths, video textures, external
@@ -308,6 +326,7 @@ export default function deploy() {
             alt="correct way to add relative files to "
             className="deploy-img"
           />
+          -------------------------------------------- */}
           <div className="deploy-info">
             If you typically export <span className="bold">render passes</span>{" "}
             for VFX in Nuke or other compositing software, set the output
