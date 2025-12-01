@@ -54,7 +54,7 @@ export default function deploy() {
         <div className="instruct-box">
           <div className="deploy-button-box">
             <a
-              href="https://console.runpod.io/deploy?template=ada1xq99pb&ref=g168bg1u"
+              href="https://get.runpod.io/tutbrkvo0y9g"
               target="_blank"
             >
               <div className="deploy-button">
